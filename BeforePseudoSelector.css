@@ -1,0 +1,11 @@
+body{
+    background-color: black;
+    color: white;
+}
+.navigation{
+    display:
+}
+header{
+    display: flex;
+    flex-direction:column;
+}
