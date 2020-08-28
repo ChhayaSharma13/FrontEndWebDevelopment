@@ -10,13 +10,14 @@
         <h2>This is HTML Form</h2>
         <!-- Use div instead of br -->
         <!-- use label for aligning text and input tag -->
-        <div>Name: <input type="text"name="myName"></div> <br>
+        <!-- give label for = "id of input" -->
+        <div><Label for="name">Name:</Label> <input type="text"name="myName" id="name"></div> <br>
         <div>
             Email: <input type="email" name="myEmail" id="">
         </div> <br>
         <div>Role: <input type="text"name="myRole"></div>   <br>
         <div>
-            Are you eligible: <input type="checkbox" name="myEligibility" id="">
+           <label for="eligible"> Are you eligible:</label> <input type="checkbox" name="myEligibility" id="eligible">
         </div>
         <div>
             Gender: Male<input type="radio" name="myGender"> Female<input type="radio" name="myGender"> Other<input type="radio" name="myGender">
@@ -25,7 +26,16 @@
         <div>
             Bonus: <input type="number" name="" id="">
         </div>
+
+        <div>
+            Message: <br>
+            <textarea name="myMsg" id="" cols="30" rows="10"></textarea>
+        </div>
         <!-- select div and use alt + down arrow -->
+        <select name="myCar" id="">
+            <option value="ind" selected>Indica</option>
+            <option value="ind">Swift</option>
+        </select>
         <div>
            <input type="submit" value="Submit Now">
         </div>
