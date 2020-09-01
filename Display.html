@@ -1,13 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Display property</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <style>
+    header{
+        /* margin:auto; */
+        border:2px solid rgba(50, 90, 100,0.9);
+        border-radius:20px;
+        /* width:50%; */
+        /* Width can't be set for inline elements, it occupies the space of its parent element */
+    }
+    img{
+        margin:auto;
+        display:block;
+        width:50px;
+        height:50px;
+        border-radius:50%;
+        /* display:inline-block helps  */
+    }
+    h3{
+            text-align:center;
+            font-family: 'Ubuntu', sans-serif;
+            margin:0px;
+        }
+        .box{
+            background-color: rgba(50, 90, 100,0.9);
+            color:white;
+            border-radius:20px;
+            padding:15px;
+            width: 32.5%;
+            margin:0px;
+            margin-top: 10px;
+            box-sizing: border-box;
+            display: inline-block;
+        }
+    </style>
 </head>
+
 <body>
-    <div class="conatiner">
+    <header>
+        <img src="images/pic.png" alt="Chhaya Sharma">
         <h3>Welcome to Chhaya's blog</h3>
+    </header>
+    <div class="conatiner">
+        <div class="box">
+            <h4 class="heading">This is some Heading</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi cumque maiores quis, repellat dignissimos distinctio atque fuga adipisci sint aliquid quisquam itaque, consequatur ut aperiam debitis maxime temporibus iusto minus unde. Odio, illum pariatur.</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">This is some Heading</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi cumque maiores quis, repellat dignissimos distinctio atque fuga adipisci sint aliquid quisquam itaque, consequatur ut aperiam debitis maxime temporibus iusto minus unde. Odio, illum pariatur.</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">This is some Heading</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi cumque maiores quis, repellat dignissimos distinctio atque fuga adipisci sint aliquid quisquam itaque, consequatur ut aperiam debitis maxime temporibus iusto minus unde. Odio, illum pariatur.</p>
+
+        </div>
     </div>
 </body>
+
 </html>
