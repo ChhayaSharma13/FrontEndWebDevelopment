@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position in HTML</title>
+    <style>
+        /* CSS Position: static()default, relative, absolute, fixed and sticky */
+        .box{
+            border:2px solid red;
+            width:150px;
+            height:150px;
+            display:inline-block;
+            margin: 2px;
+        }
+        #box3{
+            position: absolute;
+            /* position: relative; */
+            top:30px;
+            left:20px;
+            /* Relative to its normal -->top, left, right, bottom 
+            if don't want gap between old and new position use absolute
+            i.e relative to its parent element
+            */
+        }
+        #box4{
+            position: fixed;
+            /* Position of the element relative to its browser window */
+            right:4px;
+        }
+        #box1{
+            position:sticky;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>
