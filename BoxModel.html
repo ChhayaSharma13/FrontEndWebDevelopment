@@ -6,16 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Box Model</title>
     <style>
+        *{
+            box-sizing: border-box;
+        }
         .container{
             border:2px solid brown;
             border-radius:15px;
             margin:10px;
-            padding:10px;
+            padding:10px 10px;
             width:auto;
             height: fit-content;
             text-align: center;
             background-color:rgb(34, 45, 78);
             color:white;
+            /* to exclude padding and margin effect */
+            box-sizing: border-box;
+
         }
     </style>
 </head>
