@@ -41,6 +41,25 @@
             width:200px;
             height:200px;
         }
+        #item-1{
+            /* Flex properties for item1 */
+            /* higher the order later it shows up in the container */
+            order:1;
+            flex-grow:3;
+        }
+        #item-2{
+            /* flex-grow:2;
+            flex-shrink:6; */
+            flex-basis: 120px;
+            /* when flex-basis is set to row it controls width in case of column it controls height */
+        
+
+        }
+        #item-3{
+            /* flex-shrink:4; */
+            /* flex : flex-grow flex-shrink flex-basis; */
+            align-self: flex-start;
+        }
     </style>
 </head>
 <body>
@@ -51,9 +70,9 @@
         <div class="item" id="item-1">first Box</div>
         <div class="item" id="item-2">Second Box</div>
         <div class="item" id="item-3">Third Box</div>
-        <div class="item" id="item-4">Fourth Box</div>
+        <!-- <div class="item" id="item-4">Fourth Box</div>
         <div class="item" id="item-5">Fifth Box</div>
-        <div class="item" id="item-6">Sixth Box</div>
+        <div class="item" id="item-6">Sixth Box</div> -->
     </div>
 </body>
 </html>
