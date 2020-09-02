@@ -6,16 +6,36 @@
     <title>Flexbox in CSS</title>
     <style>
         .container{
-            height:350px;
+            /* height:fit-content; */
+            height:400px;
             width:100%;
             border:2px solid black;
             /* Initialize  the container as flex */
             display: flex;
             /* flex properties for container */
+            /* default value of flex-direction is row */
+            flex-direction: row; 
+            /* flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse; */
+            flex-wrap:wrap;
+            /* shorthand for flex-direction and flex wrap */
+            flex-flow:row wrap ;
+            /* to justify content horiztonatlly */
+            justify-content:center;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: space-around;
+            /* to justify content vertiaclly */
+            align-items: center;
+            align-items:flex-end;
+            align-items: stretch;
+            /* vertically align streth */
+            /* align-items:flex-start; */
         }
         .item{
             background-color: tomato;
-            border:2px solid green;
+            border:2px solid red;
             margin: 10px;
             padding:3px;
             width:200px;
