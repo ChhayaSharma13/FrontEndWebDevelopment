@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size Units in HTML</title>
+    <style>
+        html{
+            font-size:25px;
+        }
+        .container{
+            font-size:10px;
+        }
+        h1{
+            text-align: center;
+        }
+        #first{
+            text-align: center;
+            font-size:3em;
+            /* padding:parent*fontsize*padding */
+            padding:3em;
+            /* use em when child element is getting effected by parent */
+        }
+        /*  scale while fonts-size is getting effected by html content*/
+        #second{
+            font-size: 3rem;
+            padding:3rem
+        }
+    </style>
+</head>
+<body>
+    <!--For Responsive Site
+    1.Setting up the viewport
+    2.Use max-width/max-height
+    3.Using CSS media Queries
+    4.Using rem/vh/vw units over pixels -->
+    <div class="container">
+        <h1 id="first">This is first heading</h1>
+        <h1 id="second">This is second heading</h1>
+        <h1 id="third">This is third heading</h1>
+    </div>
+    
+</body>
+</html>
