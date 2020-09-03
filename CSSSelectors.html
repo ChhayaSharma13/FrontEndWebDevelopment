@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        *{
+            margin:5px auto;
+            padding:0;
+        }
+        h1{
+            background-color: tomato;
+            color:white;
+            font-weight:bolder;
+            text-align: center;
+            padding:20px;
+        }
+        div p{
+            /* any direct or indirect p inside div or div>div>div */
+            background-color: yellowgreen;
+            color:white;
+            padding:10px;
+            text-align: center;
+        }
+        div > p{
+            /* For direct tag only*/
+            background-color: yellow;
+            color:black;
+        }
+        div + p{
+            /* when p is next sibling of div */
+            background-color: rgb(26, 6, 6);
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><P>This is Paragraph inside li</P></li>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outermost paragraph</p>
+</body>
+</html>
