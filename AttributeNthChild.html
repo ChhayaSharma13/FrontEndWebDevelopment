@@ -12,28 +12,45 @@
             width: 233px;
             margin: auto;
         }
+
         input {
             display: block;
         }
+
         /* For all input type = "text" */
-        input[type='text']{
-            padding:3px;
-            border-radius:7px;
+        input[type='text'] {
+            padding: 3px;
+            border-radius: 7px;
         }
+
         /* For links with target */
-        a[target]{
-            font-size:50px;
-            color:powderblue;
+        a[target] {
+            font-size: 50px;
+            color: powderblue;
         }
-        a[target='_self']{
-            font-size:40px;
-            color:royalblue;
+
+        a[target='_self'] {
+            font-size: 40px;
+            color: royalblue;
         }
-        input[type='password']{
-            color:yellow;
-            background-color:greenyellow ;
+
+        input[type='password'] {
+            color: yellow;
+            background-color: greenyellow;
         }
+
         /* Nth child pseudo selector */
+        li:nth-child(3) {
+            color: cyan;
+        }
+
+        li:nth-child(2n+1) {
+            color: red;
+        }
+
+        li:nth-last-child(2) {
+            background-color: black;
+        }
     </style>
 </head>
 
