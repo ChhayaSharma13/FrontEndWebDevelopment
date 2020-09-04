@@ -4,24 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Before and After Pseudo Selector</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <style>
         body{
             margin:0;
             padding:0;
             background-color: black;
             color:white;
+            
+        }
+        body::before{
+            background: url('https://source.unsplash.com/random') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            z-index: -1;
+            opacity:0.8;
+
         }
         .navigation{
             font-size:20px;
             display: flex;
+            font-family: 'Roboto', sans-serif;
         
         }
         li{
             list-style: none;
-            padding:34px 23px;
+            padding:10px 23px;
         }
         section{
-            border:2px solid tomato;
             margin:3px 20px;
             display:flex;
             flex-direction: column;
@@ -44,12 +58,13 @@
                 <li class="item">Contact us</li>
             </ul>
         </nav>
-        <section>
-            <h3>Welcome to Coding world</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero natus reiciendis vel nam, voluptates quibusdam ipsam non, sint quisquam quas voluptate? Impedit quod quaerat distinctio facere quae neque rerum, blanditiis odio iste vitae rem!</p>
-    
-        </section>
     </header>
+    <section>
+        <h1>Welcome to Coding world</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero natus reiciendis vel nam, voluptates quibusdam ipsam non, sint quisquam quas voluptate? Impedit quod quaerat distinctio facere quae neque rerum, blanditiis odio iste vitae rem!</p>
+
+    </section>
+    <hr>
    
 </body>
 </html>
