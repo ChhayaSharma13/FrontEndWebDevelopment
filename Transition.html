@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+    <style>
+    #box{
+        display: flex;
+        width: 200px;
+        height:200px;
+        background-color: tomato;
+        justify-content: center;
+        align-items: center;
+        /* transition-property:background-color;
+        transition-duration:2s;
+        transition-timing-function:ease-in-out;
+        transition-delay:0.5s; */
+        transition:all 2s ease-in .3s;
+        /* Transition property can be applied to properties with continous values */
+    }
+    #box:hover{
+      background-color: magenta;  
+      height:300px;
+      width:400px;
+      font-size: 45px;
+    }
+    </style>
+</head>
+<body>
+    <h3>This is CSS Transitions </h3>
+    <div id="box">
+        This  is my box
+    </div>
+</body>
+</html>
