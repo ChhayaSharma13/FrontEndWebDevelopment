@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables in HTML</title>
+    <style>
+        :root{
+            /* these are more like a global variable */
+            /* mainly used for setting color */
+            --primaryColor:rgb(238, 188, 130);
+            --dangerColor:red;
+        }
+        .box{
+            /* Its like a local variabe */
+            --box-color:tomato;
+            width:200px;
+            height:200px;
+            background-color: var(--primaryColor);
+            border: 2px solid red;
+            box-shadow: 2px 4px var(--dangerColor);
+            margin:2px 9px;
+        }
+        .container{
+            display: flex;
+            --box-color:tomato;
+            align-items: center;
+            justify-content: center;
+            /* background-color: var(--primaryColor); */
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+
+    </div>
+</body>
+</html>
