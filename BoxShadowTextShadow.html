@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow </title>
+</head>
+<style>
+    .container{
+        display:flex;
+    }
+    .card{
+        /* border:2px solid tomato; */
+        padding:23px 12px;
+        margin:23px 12px;
+        background-color: burlywood;
+        box-shadow: 10px -5px 20px 5px green;
+        /* box-shadow:inset 3px 5px green; */
+        /* box-shadow: offset-x offset-y blur-radius spread-radius color alpha; */
+
+    }
+    .card h1{
+        /* if text is not readable at top of any image */
+        text-shadow: 2px 8px 5px rgb(221, 208, 208);
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h1>This is React Course</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta dolores eum quam consectetur dolore tempora reprehenderit. Ut perspiciatis nesciunt nostrum dolores atque facere quo nobis nisi illo, dolorem, obcaecati in, aspernatur reprehenderit quae officiis?</p>
+            
+        </div>
+        <div class="card" id="card-2">
+            <h1>This is Java Course</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque cum ratione architecto esse! Minima ratione ad non rerum! Animi ducimus iste accusantium eligendi quas. Nemo, ratione. Laudantium, cumque quo. Minus animi facilis recusandae veritatis id placeat qui praesentium fugiat quos!</p>
+        </div>
+        <div class="card" id="card-3">
+            <h1>This is Web Development Course</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus reiciendis sapiente fuga exercitationem illum eaque quo voluptatem error qui sint commodi nesciunt perferendis beatae doloremque nam sit nobis neque vero deserunt, libero culpa ratione id! At tempora repudiandae ut in!</p>
+        </div>
+    </div>
+</body>
+</html>
