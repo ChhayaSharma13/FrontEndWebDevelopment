@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Media Queries</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap:0.5rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+           
+        }
+        nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+        }
+
+        .item {
+            border: 1px solid rosybrown;
+        }
+        .bdr{
+            border:2px solid black;
+            padding:20px;
+            background-color: wheat;
+        }
+
+        @media only screen and (min-width: 300px) and (max-width:500px){
+            body{
+                background-color:rosybrown
+        
+            }
+            .container{
+                grid-template-areas:
+                'navbar'
+                'section'
+                'aside'
+                'footer ';
+            }
+           
+        } 
+        @media only screen and (min-width: 500px) and (max-width:800px){
+            body{
+                background-color:brown;
+            }
+            .container{
+                grid-template-areas:
+                'navbar navbar  '
+                'section aside'
+                'footer footer';
+            }
+
+        } 
+        @media only screen and (min-width: 800px){
+            body{
+                background-color:magenta;
+            }
+        } 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav  id="nav"class="bdr">
+            Home About Contact 
+        </nav>
+        <section id="section"class="bdr">
+            <p>Learn CSS Grid with Media Queries</p>
+        </section>
+        <aside class="bdr">
+            <h1>Home About Contact</h1>
+        </aside>
+        <footer class="bdr">
+            <p>&copy;2020</p>
+        </footer>
+        
+    </div>
+</body>
+</html>
