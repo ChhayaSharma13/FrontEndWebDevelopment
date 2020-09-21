@@ -14,16 +14,33 @@
         let myVar2 = "String value";
         let myVar3 = true;
         console.log(typeof(myVar3));
-        let  employee = {
+        let  person = {
             name: "Chhaya",
             age: 22,
-            profession: "Software Developer"
+            profession: "Software Developer",
+            "address 2": "Navi Mumbai",
         }
-        console.log(employee);
+        console.log(person);
         // no restriction to save same type of elemment in array
         let names = [1,2,4,"Chhaya", undefined];
         console.log(names[3]);
         console.log(names);
+
+        let array = new Array(1,"hsyuiiurioo",5,6000,67,"Chhaya");
+        console.log(array);
+        console.log(array.length);
+       array = array.sort();
+       console.log(array);
+       console.log(person.age);
+       array.push("Pushed at the end of Array");
+       console.log(array);
+
+
+    //   to access array elements
+    //  *****************
+        console.log(person['address 2']);
+        console.log(person.name);
+
     </script>
 </body>
 </html>
