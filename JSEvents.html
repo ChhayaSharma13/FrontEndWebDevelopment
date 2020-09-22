@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Events</title>
+    <style>
+        #btn{
+           padding:12px;
+           color:white;
+           background-color: black; 
+           font-weight: bold;
+           border-radius: 15px;
+           cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Browser events
+     Click
+     contextmenu - right click on some div element
+     Mouse- mouseover, mouseout, mousedown, mouseup
+     Form - Submit, Input Focus
+     DOMContentLoaded
+     transitionEnd
+     -->
+     <div class="container">
+         <h1>This is my Heading</h1>
+         <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum earum iure voluptatibus quaerat consequatur a cupiditate officiis libero dignissimos quia enim soluta ut laborum facere corrupti autem sed, ipsam sunt sit porro rerum quasi voluptates! Commodi doloribus ad rerum pariatur ea, consectetur laboriosam libero assumenda doloremque iste at error et vel incidunt quo. Aut facilis animi reiciendis sit consequatur dolor laboriosam ad ex. Totam, deserunt sit nesciunt in sapiente impedit illo perspiciatis inventore aperiam aliquid error nobis consectetur expedita repellendus nemo quam et? Iure, reprehenderit fugit id consequatur ipsa minus non debitis temporibus? Assumenda aperiam velit nihil recusandae dignissimos quas error, molestias corrupti in eius, quo aut ea iste accusamus, obcaecati facere suscipit qui doloremque quibusdam exercitationem sapiente! Qui velit, eius saepe minima temporibus eos distinctio nihil, vitae mollitia, non exercitationem? Beatae quibusdam ab repellendus corrupti numquam. Optio cum voluptatum, eum eaque iusto voluptate fugiat numquam libero, culpa dolore necessitatibus quae pariatur. Hic labore sint temporibus? Cupiditate quas totam repellat ducimus reprehenderit tempora odit explicabo inventore corrupti vero maiores nisi doloribus, ipsa ut. Saepe consequatur ipsam doloremque in rem laudantium magni rerum repudiandae recusandae molestias tenetur totam praesentium aliquam dolor nam ab sequi earum incidunt, ea quam nisi reprehenderit officia quasi facilis. Consectetur iure voluptatibus explicabo ipsum soluta voluptatem quo cupiditate quis, expedita magni suscipit asperiores voluptate rerum culpa omnis praesentium optio odio maxime facere autem eveniet? Repellat sequi itaque commodi pariatur, delectus hic, magnam nulla sed laborum distinctio harum in ipsa voluptatum iste tenetur id natus tempora. Voluptatem hic deserunt similique! Eius distinctio laborum deleniti voluptatem quibusdam, amet dolore maxime corporis modi hic nesciunt sit ab quam nihil aperiam a tempore iste, aliquid minus magni saepe asperiores! Autem tenetur quae debitis officia deleniti dolor magni eveniet dicta, impedit iure reiciendis voluptate sed unde et deserunt totam asperiores! Id temporibus architecto nisi placeat totam! Illum non debitis saepe at, commodi in excepturi harum totam, reiciendis, ipsa perspiciatis rem! Fugiat consectetur dignissimos tenetur officia sed ducimus neque adipisci. Impedit qui non ullam maiores provident incidunt molestias ducimus quibusdam placeat neque! Sapiente, rerum suscipit, voluptatem iusto repellendus illum optio sed necessitatibus consequuntur sint distinctio provident aperiam ullam nemo labore enim magni doloribus. Asperiores harum eveniet aut in est maxime numquam molestias. Provident assumenda reprehenderit ipsum ratione similique nesciunt vero neque non cum placeat doloremque alias harum vel debitis at eos beatae, modi, minus nihil voluptatibus, dolores obcaecati! Illum corporis dolorem nemo praesentium!</p>   
+     </div>
+     <button id="btn" onclick="toggleHide()">Show/Hide</button>
+     <script>
+         function toggleHide(){
+             let btn = document.getElementById("btn");
+             let para = document.getElementById("para");
+            if( para.style.display!='none'){
+                para.style.display='none';
+            }
+            else{
+                para.style.display='block';
+            }
+         }
+     </script>
+</body>
+</html>
