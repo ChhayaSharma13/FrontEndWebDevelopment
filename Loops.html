@@ -1,33 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loops in JavaScipt</title>
 </head>
+
 <body>
     <div class="container">
         This is about loops
     </div>
     <script>
         console.log("This is Loops tutorial");
-        for(let i=0;i<3;i++){
+        for (let i = 0; i < 3; i++) {
             console.log(i);
         }
-        let friends = ["Rohan","Joe", "Mick","Nick"];
+        let friends = ["Rohan", "Joe", "Mick", "Nick"];
         // for (let index = 0; index < friends.length; index++) {
         //     console.log("Hello "+friends[index]); 
         // }
-        friends.forEach(function f(element){
-            console.log("Hello "+ element)
+        friends.forEach(function f(element) {
+            console.log("Hello " + element)
         });
-        let array = [1,56,"Chhaya",89];
-        array.forEach(function f(element1){
-            console.log("Hey "+ element1)
+        let array = [1, 56, "Chhaya", 89];
+        array.forEach(function f(element1) {
+            console.log("Hey " + element1)
         });
+        // For of loop in javascript
+        for (element of array) {
+            console.log("Hii " + element + " from For of loop");
+        }
 
        
 
+
     </script>
 </body>
+
 </html>
