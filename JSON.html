@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with JSON </title>
+</head>
+<body>
+    <!-- Notation for storing and transporting data over net -->
+    <!-- JSON is often used when data is sent from a server to a web page 
+    JSON is self-describing-->
+    <div class="container">
+        This  is my container
+    </div>
+    <script>
+        let jsonObj = {
+            name: "Chhaya",
+           age: 22,
+           salary: 10,
+           surname: "Sharma"
+        }
+        console.log(jsonObj);
+        let myJSONStr = JSON.stringify(jsonObj);
+        console.log(myJSONStr)
+
+        myJSONStr = myJSONStr.replace('Chhaya', "Chayaaaaaa");
+        console.log(myJSONStr);
+
+        let newJSONObj = JSON.parse(myJSONStr);
+        console.log(newJSONObj)
+        // JSON.parse("I'm not passinf valid JSON object);
+        
+    </script>
+</body>
+</html>
