@@ -32,7 +32,16 @@
         console.log(sum(2,3));
         console.log(sum2(23));
 
-        
+        let obj1 = {
+            greeting: "Good morning!",
+            name: ["Harry", "Rohan", "SkillF", "jsdkhsdjk"],
+            speak(){
+                this.name.forEach((element) => {
+                console.log(this.greeting+ " Kukdoo koo " + element);
+            });
+            }
+        }
+        obj1.speak();
     </script>
 </body>
 </html>
