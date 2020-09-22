@@ -7,7 +7,8 @@
 </head>
 <body>
     <div class="container">
-        This is a container
+        Time now is 
+        <span id="time"> </span>
     </div>
     <script>
         console.log("This is Interval practice");
@@ -21,6 +22,19 @@
         console.log(timeOut);
 
         // clearTimeout(timeOut);
+        // intervaId = setInterval(greet, 1000, "Mark", "Bye!");
+        // let intervalId = setInterval(greet, 1000, "Mark", "Bye!")
+        // clearInterval(intervalId);
+   
+   function displayTime(){
+       time = new Date();
+       console.log(time);
+    document.getElementById('time').innerHTML = time;
+   }
+   setInterval(displayTime,1000);
+   
+   
+   
     </script>
 </body>
 </html>
