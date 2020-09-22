@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Time Interval and TimeOut</title>
+</head>
+<body>
+    <div class="container">
+        This is a container
+    </div>
+    <script>
+        console.log("This is Interval practice");
+        // setTimeout - allows us to run function after the interval of Time
+        // clearTimeout - allows us to run the function repeatedly after the interval of time
+        function greet(name, byeText){
+            console.log("Hello, Good morning "+name + " "+ byeText)
+        }
+        // in function we don't need to call the function, just provide function name
+        timeOut = setTimeout(greet, 2000, "Joe", "Take care");
+        console.log(timeOut);
+
+        // clearTimeout(timeOut);
+    </script>
+</body>
+</html>
