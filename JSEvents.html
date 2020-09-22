@@ -30,6 +30,15 @@
      </div>
      <button id="btn" onclick="toggleHide()">Show/Hide</button>
      <script>
+         let para = document.getElementById("para");
+        para.addEventListener('mouseover', function run(){
+            para.style.fontWeight = "bold";
+        } );
+
+        para.addEventListener('mouseout',function run(){
+            para.style.fontWeight = "normal";
+        })
+
          function toggleHide(){
              let btn = document.getElementById("btn");
              let para = document.getElementById("para");
