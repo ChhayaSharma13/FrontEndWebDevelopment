@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manipulating DOM elements</title>
 </head>
+
 <body>
     <div id="main" class="container">
         <ul id="nav">
@@ -16,24 +18,31 @@
         </ul>
     </div>
     <div class="container">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam facilis quisquam commodi illum quam sint eveniet dicta ea deserunt, similique libero veritatis. Laudantium dolores aut hic odio repellat quaerat voluptatibus!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam facilis quisquam commodi illum quam sint
+            eveniet dicta ea deserunt, similique libero veritatis. Laudantium dolores aut hic odio repellat quaerat
+            voluptatibus!</p>
 
     </div>
     <script>
         let main = document.getElementById("main");
         console.log(main);
-         
+
         let nav = document.getElementById("nav").innerHTML;
         console.log(nav);
-       console.log(nav.innerHTML = "<li>dyanic element</li>");
-       console.log(document.getElementsByClassName("container"));
-       
-       let container = document.getElementsByClassName('container');
-       console.log(container);
-     
- 
- 
- 
+        console.log(nav.innerHTML = "<li>dyanic element</li>");
+        console.log(document.getElementsByClassName("container"));
+
+        let container = document.getElementsByClassName('container');
+        console.log(container);
+
+        // CSS Selectors
+        let sel = document.querySelector('.container');
+        console.log(sel);
+        let sel1 = document.querySelectorAll("#nav>li");
+        console.log("Selector returns ", sel1);
+
+
     </script>
 </body>
+
 </html>
