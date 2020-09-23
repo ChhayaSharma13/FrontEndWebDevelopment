@@ -14,6 +14,10 @@ const port = 3000;
 // requestListener - optional. Specifies a function to be executed 
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
+//   res.setHeader() - native method of Node.js and res.header() is an alias of res.set() method  from Express framework
+//  both sets the Headers HTTP response
+// res.setHeader - allows to set a singular header
+// res.header() - allows to set multiple headers
   res.setHeader('Content-Type', 'text/plain');
   res.end('Hello World');
 });
