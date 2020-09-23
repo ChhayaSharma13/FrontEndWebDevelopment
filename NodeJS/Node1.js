@@ -19,6 +19,9 @@ const server = http.createServer((req, res) => {
 // res.setHeader - allows to set a singular header
 // res.header() - allows to set multiple headers
   res.setHeader('Content-Type', 'text/plain');
+//   res.end - will end the response process.  It's a method of http.ServerResponse. It is used to quickly end the response without any data.
+//  res.end - will not tell the content type
+// res.send - will send the HTTP Response, it will tell the content type
   res.end('Hello World');
 });
 
